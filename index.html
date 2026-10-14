@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Jesica Galuh Restioningsih</title>
+    <style>
+        
+        :root {
+            --primary: #1E40AF; /* Strong blue for headings/accents */
+            --secondary: #3B82F6; /* Lighter blue for highlights */
+            --dark: #1E293B; /* Slate dark for text */
+            --light: #EFF6FF; /* Very light blue background */
+            --gray: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Header Navigation */
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .logo-container { display: flex; align-items: center; gap: 0.75rem; }
+        .header-avatar { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; border: 2px solid var(--secondary); }
+        .logo { font-size: 1.1rem; font-weight: bold; color: var(--primary); }
+        nav a { margin-left: 1.5rem; text-decoration: none; color: var(--dark); font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--secondary); }
+        
+        /* Hero Section */
+        .hero { padding: 4rem 5%; background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%); color: white; }
+        .hero-container { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap; text-align: left; }
+        .profile-img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .hero-text { flex: 1; min-width: 280px; }
+        .hero h1 { font-size: 2.3rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--secondary); color: white; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #0f766e; }
+        
+        /* General Section */
+        section { padding: 4rem 5%; max-width: 1100px; margin: 0 auto; }
+        h2 { font-size: 1.8rem; color: var(--primary); margin-bottom: 1.5rem; border-bottom: 3px solid var(--secondary); display: inline-block; padding-bottom: 0.3rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+        
+        /* Card Styling */
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); display: flex; flex-direction: column; }
+        .card h3 { color: var(--dark); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        
+        /* Certification Images */
+        .cert-img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem; border: 1px solid #e2e8f0; transition: transform 0.3s; }
+        .cert-img:hover { transform: scale(1.02); }
+        
+        .tags span { display: inline-block; background: #e2e8f0; color: var(--dark); font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 4px; margin-right: 0.3rem; margin-top: 0.5rem; }
+        ul { list-style-position: inside; color: var(--gray); }
+        footer { text-align: center; padding: 2rem; background: var(--dark); color: var(--gray); font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero-container { text-align: center; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-container">
+            <!-- Ganti 'foto-profil.jpg' dengan nama berkas foto Anda -->
+            <img src="FOTO.JPEG" alt="Foto Profil" class="header-avatar">
+            <div class="logo">Jesica Galuh Restioningsih, S.Ak</div>
+        </div>
+        <nav>
+            <a href="#about">Tentang</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#Pengalaman">Pengalaman</a>
+            <a href="#projects">Proyek</a>
+            <a href="#Organisasi">Organisasi</a>
+            <a href="#certifications">Sertifikasi</a>
+            <a href="#contact">Kontak</a>
+            <a href="https://drive.google.com/file/d/1X5inUcM_RYRTwKLOm-rPcIo1OzvcTfEF/view?usp=sharing" target="blank">Unduh CV</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section / Header Utama -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Ganti 'foto-profil.jpg' dengan berkas foto formal Anda -->
+            <img src="FOTO.JPEG" alt="Jesica Galuh Restioningsih" class="profile-img">
+            <div class="hero-text">
+                <h1>Jesica Galuh Restioningsih</h1>
+                <p>Accounting Graduate | Accounting, Finance & Tax </p>
+                <a href="#contact" class="btn">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah lulusan S1 Akuntansi dengan pemahaman kuat tentang prinsip-prinsip akuntansi,pengelolaan keuangan, dan analisis data. Berpengalaman dalam penyusunan laporan keuangan dan pengelolaan anggaran, serta terbiasa menggunakan Microsoft Excel untuk meningkatkan efisiensi kerja. Dikenal sebagai individu yang teliti, bertanggung jawab, dan komunikatif, saya mampu bekerja secara tim maupun mandiri untuk menyelesaikan proyek tepat waktu. Dengan semangat belajar yang tinggi, saya berkomitmen mengembangkan kemampuan di bidang akuntansi dan keuangan demi mendukung pertumbuhan perusahaan.</p>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills">
+        <h2>Keahlian Utama</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Akuntansi & Keuangan</h3>
+                <ul>
+                    <li>Basic Accounting</li>
+                    <li>Creativity</li>
+                    <li>Mampu bekerja mandiri maupun tim</li>
+                    <li>Critical Thinking</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Perpajakan</h3>
+                <ul>
+                    <li>Pencatatan PPh 21, 23, PPN</li>
+                    <li>Pengisian e-SPT & e-Faktur</li>
+                    <li>Pemeriksaan Bukti Transaksi</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Software & Alat</h3>
+                <div class="tags">
+                    <span>Microsoft Excel (Advanced)</span>
+                    <span>Microsoft Word (Advanced)</span>
+                    <span>Microsoft PowerPoint (Advanced)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Bekerja & Magang -->
+    <section id="Pengalaman">
+        <h2>Pengalaman Bekerja & Magang</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>PT Bharata Internasional Pharmaceutical - Accounting Staff</h3>
+                <ul>
+                    <li>Menginput dan memverifikasi seluruh transaksi pembayaran CV, mengarsipkan dokumen dengan rapi, serta merekap uang masuk marketplace untuk penarikan kas toko ke rekening CV. Selain itu, juga mencatat seluruh transaksi pada sistem akuntansi, menghitung omzet penarikan marketplace untuk pelaporan pajak UMKM, menghitung kuantitas penjualan produk, serta menyusun laporan keuangan bulanan dan tahunan CV.</li>
+                </ul>
+                <div class="tags"><span>Bekerja</span><span>Juni 2025 - Sekarang</span></div>
+            </div>
+            <div class="card">
+                <h3>PT Adaruz Nusa Hasanah - Finance</h3>
+                <ul>
+                    <li>Pencatatan administrasi dan keuangan mencakup laporan cash in dan cash out, laporan mingguan, bulanan, hingga tutup buku akhir tahun. Kegiatan lainnya meliputi setoran keuangan, pembuatan kuitansi, invoice, bukti transaksi, serta pengajuan dana dan pembayaran vendor. Selain itu, dilakukan juga order material, form PO customer, SPK, ceklis BQ material, sabtuan tukang, pengarsipan berkas, dan penyampaian berkas pajak ke konsultan pajak sebagai bentuk pertanggungjawaban perusahaan.</li>
+                </ul>
+                <div class="tags"><span>Bekerja</span><span>Februari 2024 - Desember 2024</span></div>
+            </div>
+<div class="card">
+                <h3>KSP Madhani Ajibarang - Admin Keuangan</h3>
+                <ul>
+                    <li>Membuat laporan harian, laporan mingguan, laporan bulanan, serta laporan tahunan. Mengelola keuangan perusahaan termasuk pencatatan, pengawasan, dan penyetoran keuangan. Menyusun neraca bulanan serta laporan laba rugi bulanan secara akurat dan tepat waktu untuk mendukung pengambilan keputusan manajemen.</li>
+                </ul>
+                <div class="tags"><span>Bekerja</span><span>November 2021 - April 2023</span></div>
+            </div>
+<div class="card">
+                <h3>PT Nusaindo Intermedia - CSA</h3>
+                <ul>
+                    <li>Mengakuisisi Customer, membuat Laporan Leads Input Penjualan, input Closing, Membuat Laporan Closing.</li>
+                </ul>
+                <div class="tags"><span>Magang</span><span>April 2023 - Juli 2023</span></div>
+            </div><div class="card">
+                <h3>PT Khurenza ID - Admin</h3>
+                <ul>
+                    <li>Respon Customer,Uploding Produk,Handle Marketplace,Laporan Mingguan,Bordcast Chat, IKlan Produk.</li>
+                </ul>
+                <div class="tags"><span>Magang</span><span>Agustus 2023 - Januari 2024</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek & Portofolio -->
+    <section id="projects">
+        <h2>Portofolio & Studi Kasus</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Penyusunan Laporan Keuangan</h3>
+                <p>Melakukan evaluasi dan penyusunan laporan keuangan untuk kebutuhan perusahaan dan pelaporan perpajakan.</p>
+                <div class="tags"><span>Financial Reporting</span><span>Excel</span></div>
+            </div>
+            <div class="card">
+                <h3>Analisis Kinerja Keuangan</h3>
+                <p>Membuat analisis tren keuangan tahunan menggunakan rasio likuiditas, profitabilitas, dan solvabilitas.</p>
+                <div class="tags"><span>Financial Analysis</span><span>Excel</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Organisasi -->
+    <section id="Organisasi">
+        <h2>Pengalaman Organisasi</h2>
+        <div class="grid">
+            <div class="card">
+                <h2>HIMAPSI - Departemen Kaderisasi</h2>
+                <ul>
+                <div class="tags"><span>2022 - 2023</span></div>
+            </div>
+            <div class="card">
+                <h2>RACANA- BENDAHARA</h2>
+                <ul>
+                <div class="tags"><span>2021 - 2024</span></div>
+            </div>
+            <div class="card">
+                <h2>PMII- BENDAHARA</h2>
+                <ul>
+                <div class="tags"><span>2021 - 2025</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sertifikasi & Pelatihan dengan Foto -->
+    <section id="certifications">
+        <h2>Sertifikasi & Pelatihan</h2>
+        <div class="grid">
+            <div class="card">
+                <!-- Ganti 'sertifikat-brevet.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="LITERASI.JPEG" alt="KOMINFO Literasi Digital Indonesia" class="cert-img">
+                <h3>KOMINFO Literasi Digital Indonesia</h3>
+                <p>Penyelenggara: Gerakan Literasi Pandu Digital Indonesia | 2022</p>
+            </div>
+            <div class="card">
+                <!-- Ganti 'sertifikat-excel.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="PKL.JPEG" alt="PKL Dinas Pendidikan 2020" class="cert-img">
+                <h3>PKL Dinas Pendidikan 2020</h3>
+                <p>Penyelenggara: Dinas Pendidikan | 2020</p>
+            </div>
+            <div class="card">
+                <!-- Ganti 'sertifikat-excel.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="COC.JPEG" alt="Certificate Of Competency" class="cert-img">
+                <h3>Certificate Of Competency</h3>
+                <p>Penyelenggara: PERUMDA AIR MINUM TIRTA SATRIA | 2021</p>
+            </div>
+            <div class="card">
+                <!-- Ganti 'sertifikat-excel.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="MNC.JPEG" alt="MNC Education Perpajakan SP2DK" class="cert-img">
+                <h3>MNC Education Perpajakan SP2DK</h3>
+                <p>Penyelenggara: MNC Education | 2024</p>
+            </div>
+            <div class="card">
+                <!-- Ganti 'sertifikat-excel.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="ALGORIT.JPG" alt="Algoritma Quick Count Pemilu" class="cert-img">
+                <h3>Algoritma Quick Count Pemilu</h3>
+                <p>Penyelenggara: ALGORITMA Reserch & Consulting | 2024</p>
+            </div>
+            <div class="card">
+                <!-- Ganti 'sertifikat-excel.jpg' dengan nama berkas sertifikat Anda -->
+                <img src="EPTUNU.JPG" alt="English Profiency Test of UNU Purwokerto" class="cert-img">
+                <h3>English Profiency Test of UNU Purwokerto</h3>
+                <p>Penyelenggara: UNU Purwokerto | 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya untuk diskusi peluang kerja atau kolaborasi.</p>
+        <p style="margin-top: 1rem;">
+            <strong>Email:</strong> <a href="mailto:jesicagaluh5@gmail.com">jesicagaluh5@gmail.com</a><br>
+            <strong>Telepon:</strong> 087768202042<br>
+            <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/jesicaglhrstngsh" target="blank">linkedin.com/in/jesicaglhrstngsh</a><br>
+            <strong>Lokasi:</strong> Banyumas, Indonesia
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jesica Galuh Restioningsih. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
